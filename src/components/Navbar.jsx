@@ -60,13 +60,15 @@ export const Navbar = () => {
                 )}
             >
                 <div className="container mx-auto px-4">
-                    <div className="flex items-center justify-between">
-                        {/* Logo/Brand */}
-                        <div className="text-xl font-bold text-primary">
-                            Shreya
-                        </div>
+                    <div className="flex items-center justify-between w-full">
+                        {/* Logo/Brand - Left */}
+                        <a href="#home" className="text-2xl font-bold text-primary hover:text-primary/80 transition-colors duration-300">
+                            <span className="bg-gradient-to-r from-primary to-purple-400 bg-clip-text text-transparent animate-pulse-subtle">
+                                SP
+                            </span>
+                        </a>
 
-                        {/* Desktop Navigation */}
+                        {/* Desktop Navigation - Center */}
                         <div className="hidden lg:flex items-center space-x-8">
                             {navItems.map((item) => (
                                 <a
@@ -79,8 +81,8 @@ export const Navbar = () => {
                             ))}
                         </div>
 
-                        {/* Desktop Theme Toggle */}
-                        <div className="hidden lg:flex items-center space-x-4">
+                        {/* Desktop Theme Toggle - Right */}
+                        <div className="hidden lg:flex items-center">
                             <button
                                 onClick={toggleTheme}
                                 className="p-2 rounded-full hover:bg-primary/10 transition-colors duration-300"
