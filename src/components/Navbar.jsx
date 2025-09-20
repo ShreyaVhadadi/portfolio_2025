@@ -59,12 +59,12 @@ export const Navbar = () => {
                     isScrolled ? "py-3 bg-background/90 backdrop-blur-md shadow-lg" : "py-4"
                 )}
             >
-                <div className="container mx-auto px-4">
+                <div className="w-full px-4">
                     <div className="flex items-center justify-between w-full">
-                        {/* Logo/Brand - Left */}
+                        {/* Logo/Brand - Far Left */}
                         <a href="#home" className="text-2xl font-bold text-primary hover:text-primary/80 transition-colors duration-300">
                             <span className="bg-gradient-to-r from-primary to-purple-400 bg-clip-text text-transparent animate-pulse-subtle">
-                                SP
+                                SV
                             </span>
                         </a>
 
@@ -81,7 +81,7 @@ export const Navbar = () => {
                             ))}
                         </div>
 
-                        {/* Desktop Theme Toggle - Right */}
+                        {/* Desktop Theme Toggle - Far Right */}
                         <div className="hidden lg:flex items-center">
                             <button
                                 onClick={toggleTheme}

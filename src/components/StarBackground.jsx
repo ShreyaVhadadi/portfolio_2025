@@ -33,16 +33,16 @@ export const StarBackground =() =>{
     },[isInitialized]);
 
     const generateStars =() =>{
-        const numberOfStars = Math.floor(window.innerWidth*window.innerHeight/2000); // Reduced density
+        const numberOfStars = Math.floor(window.innerWidth*window.innerHeight/600); // Higher density for full coverage
         const newStars=[]
         for( let i=0;i<numberOfStars;i++){
             newStars.push({
                 id:i,
-                size: Math.random()*2+1, // Smaller size range
-                x: Math.random() * 100,
-                y: Math.random() * 100,
-                opacity: Math.random() * 0.3 + 0.4, // More consistent opacity
-                animationDuration: Math.random() * 3 + 3, // Longer, more stable duration
+                size: Math.random()*2+1, // Simple size range
+                x: Math.random() * 160 - 30, // Extended range: -30% to 130% (left-right)
+                y: Math.random() * 160 - 30, // Extended range: -30% to 130% (top-bottom)
+                opacity: Math.random() * 0.4 + 0.4, // Reduced opacity range for subtle flickering
+                animationDuration: Math.random() * 2 + 1, // Faster, more varied flickering
             });
         }
 
